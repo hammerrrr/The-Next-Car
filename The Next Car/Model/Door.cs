@@ -34,7 +34,7 @@ namespace The_Next_Car.Model
             return this.locked;
         }
 
-        public bool isClosen ()
+        public bool isClosed ()
         {
             return this.closed;
         }
