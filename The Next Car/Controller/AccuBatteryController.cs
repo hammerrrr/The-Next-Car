@@ -9,11 +9,17 @@ namespace The_Next_Car.Controller
     {
         private AccuBattery accuBattery;
         private OnPowerChanged callBackOnPowerChanged;
+        private MainWindow mainWindow;
 
         public AccuBatteryController (OnPowerChanged callBackOnPowerChanged)
         {
             this.accuBattery = new AccuBattery(12);
             this.callBackOnPowerChanged = callBackOnPowerChanged;
+        }
+
+        public AccuBatteryController(MainWindow mainWindow)
+        {
+            this.mainWindow = mainWindow;
         }
 
         public bool accuBatteryIsOn ()

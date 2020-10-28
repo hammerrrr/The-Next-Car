@@ -9,12 +9,20 @@ namespace The_Next_Car.Controller
         AccuBatteryController accuBatteryController;
         DoorController doorController;
         OnCarEngineStatusChanged callbackCarEngineStatusChanged;
+        private MainWindow mainWindow;
 
         public Car (AccuBatteryController accuBatteryController, DoorController doorController, OnCarEngineStatusChanged callbackCarEngineStatusChanged)
         {
             this.accuBatteryController = accuBatteryController;
             this.doorController = doorController;
             this.callbackCarEngineStatusChanged = callbackCarEngineStatusChanged;
+        }
+
+        public Car(AccuBatteryController accuBatteryController, DoorController doorController, MainWindow mainWindow)
+        {
+            this.accuBatteryController = accuBatteryController;
+            this.doorController = doorController;
+            this.mainWindow = mainWindow;
         }
 
         public void turnOnPower ()
@@ -54,7 +62,7 @@ namespace The_Next_Car.Controller
 
         private bool doorIsClosed ()
         {
-            return this.doorController.isClosed();
+            return this.doorController.isClose();
         }
 
         private bool doorIsLocked ()
@@ -87,7 +95,7 @@ namespace The_Next_Car.Controller
 
         public void toggleTheLockDoorButton ()
         {
-            if (!doorIsLocked)
+            if (!doorIsLocked ())
             {
                 this.lockTheDoor();
             } else
@@ -98,7 +106,7 @@ namespace The_Next_Car.Controller
 
         public void toggleTheDoorButton ()
         {
-            if (!doorIsClosed ()
+            if (!doorIsClosed ())
             {
                 this.closeTheDoor ();
             }
@@ -110,7 +118,7 @@ namespace The_Next_Car.Controller
 
         public void toggleThePowerButton ()
         {
-            if (!powerIsReady()
+            if (!powerIsReady())
             {
                 this.turnOnPower();
             }
