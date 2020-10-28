@@ -8,15 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="map.jpeg" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="assets\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="map.jpeg" />
   </ItemGroup>
 
 </Project>
