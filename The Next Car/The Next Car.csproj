@@ -7,6 +7,7 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+<<<<<<< Updated upstream
   <ItemGroup>
     <None Remove="map.jpeg" />
   </ItemGroup>
@@ -19,4 +20,6 @@
     <Resource Include="map.jpeg" />
   </ItemGroup>
 
+=======
+>>>>>>> Stashed changes
 </Project>
