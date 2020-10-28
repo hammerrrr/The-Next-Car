@@ -24,5 +24,25 @@ namespace The_Next_Car
         {
             InitializeComponent();
         }
+
+        private void StartButton_Click(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("start button");
+        }
+
+        private void DoorOpenButton_Click(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("door open button");
+        }
+
+        private void LoockDoorButton_Click(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("lock door button");
+        }
+
+        private void AccuButton_Click(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("accu button");
+        }
     }
 }
