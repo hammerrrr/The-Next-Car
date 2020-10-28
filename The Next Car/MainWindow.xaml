@@ -14,7 +14,7 @@
         <Button x:Name="DoorOpenButton" Content="CLOSED" HorizontalAlignment="Left" Margin="300,338,0,0" VerticalAlignment="Top" Height="27" Width="96" Click="DoorOpenButton_Click"/>
         <Label x:Name="DoorOpenState" Content="Door is closed" HorizontalAlignment="Left" Margin="300,381,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.401,0.74" FontSize="16"/>
         <Label x:Name="DoorOpenState_Copy1" Content="Security" HorizontalAlignment="Left" Margin="473,302,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.401,0.74" FontSize="16"/>
-        <Button x:Name="LoockDoorButton" Content="LOCKED" HorizontalAlignment="Left" Margin="458,338,0,0" VerticalAlignment="Top" Height="27" Width="96" Click="LoockDoorButton_Click"/>
+        <Button x:Name="LockDoorButton" Content="LOCKED" HorizontalAlignment="Left" Margin="458,338,0,0" VerticalAlignment="Top" Height="27" Width="96" Click="LockDoorButton_Click"/>
         <Label x:Name="LockDoorState" Content="Door is locked" HorizontalAlignment="Left" Margin="458,381,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.401,0.74" FontSize="16"/>
         <Label x:Name="DoorOpenState_Copy2" Content="Power" HorizontalAlignment="Left" Margin="637,302,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.401,0.74" FontSize="16"/>
         <Button x:Name="AccuButton" Content="ON" HorizontalAlignment="Left" Margin="616,338,0,0" VerticalAlignment="Top" Height="27" Width="96" Click="AccuButton_Click"/>
