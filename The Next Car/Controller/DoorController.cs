@@ -9,11 +9,17 @@ namespace The_Next_Car.Controller
     {
         private Door door;
         private OnDoorChanged onDoorChanged;
+        private MainWindow mainWindow;
 
         public DoorController (OnDoorChanged onDoorChanged)
         {
             this.door = new Door();
             this.onDoorChanged = onDoorChanged;
+        }
+
+        public DoorController(MainWindow mainWindow)
+        {
+            this.mainWindow = mainWindow;
         }
 
         public void close ()
@@ -46,7 +52,7 @@ namespace The_Next_Car.Controller
             onDoorChanged.doorSecurityChanged("UNLOCKED", "door is unlocked");
         }
 
-        public bool isClosed ()
+        public bool isClose ()
         {
             return this.door.isClosed();
         }
